@@ -1,0 +1,19 @@
+{
+  "name": "p3_amraoui_jawad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dojando/P3_amraoui_jawad.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dojando/P3_amraoui_jawad/issues"
+  },
+  "homepage": "https://github.com/Dojando/P3_amraoui_jawad#readme"
+}
