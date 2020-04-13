@@ -57,12 +57,15 @@ footer {
   height: 50px;
   background-color: #569C87;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   color: #FCCA46;
   font-weight: 500;
   position: fixed;
   bottom: 0px;
+}
+footer p {
+  margin: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
