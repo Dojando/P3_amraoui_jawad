@@ -27,27 +27,115 @@ header h1 {
 }
 .contenu__menu1 {
   width: 250px;
-  height: 380px;
+  height: 360px;
   margin: 30px 0 30px 0;
   box-shadow: 0px 0px 3px 3px #dad8d8;
+  background-color: #FCDFDB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenu__menu1__detail {
+  text-align: center;
+}
+.contenu__menu1__detail i {
+  font-size: 3em;
+  background: linear-gradient(90deg, #f04a5e 0%, #f78f6a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contenu__menu1__detail p {
+  font-family: "Kalam", sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #3C1218;
+}
+.contenu__menu1__detail h2 {
+  font-family: "Kalam", sans-serif;
+  font-weight: 600;
+  font-size: 1.8em;
+  color: #3C1218;
 }
 .contenu__menu2 {
   width: 250px;
-  height: 380px;
+  height: 360px;
   margin: 30px 0 30px 0;
   box-shadow: 0px 0px 3px 3px #dad8d8;
+  background-color: #FFF5FE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenu__menu2__detail {
+  text-align: center;
+}
+.contenu__menu2__detail p {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  background: linear-gradient(139deg, #c77412 0%, #9a40ee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contenu__menu2__detail h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #C77412;
 }
 .contenu__menu3 {
   width: 250px;
-  height: 380px;
+  height: 360px;
   margin: 30px 0 30px 0;
   box-shadow: 0px 0px 3px 3px #dad8d8;
+  background-color: #F9F9F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenu__menu3__detail {
+  text-align: center;
+}
+.contenu__menu3__detail p {
+  font-family: "Kalam", sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  background: linear-gradient(158deg, #081dac 0%, #0887fb 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contenu__menu3__detail h2 {
+  font-family: "Kalam", sans-serif;
+  font-size: 1.8em;
+  font-weight: 500;
+  color: #0887FB;
 }
 .contenu__menu4 {
   width: 250px;
-  height: 380px;
+  height: 360px;
   margin: 30px 0 30px 0;
   box-shadow: 0px 0px 3px 3px #dad8d8;
+  background-color: #FDFFFD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenu__menu4__detail {
+  text-align: center;
+}
+.contenu__menu4__detail p {
+  font-family: "Kalam", sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  background: linear-gradient(90deg, #64bf42 0%, #a8ff9e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contenu__menu4__detail h2 {
+  font-family: "Kalam", sans-serif;
+  font-size: 1.8em;
+  font-weight: 500;
+  color: #72BF56;
 }
 
 .zone_prochainement {
