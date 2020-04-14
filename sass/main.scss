@@ -6,7 +6,7 @@ $jaune_principal: #FCCA46;
 @mixin affiche_menu {
     width: 250px;
     height: 380px;
-    margin: 30px 30px 30px 30px;
+    margin: 30px 0 30px 0;
     box-shadow: 0px 0px 3px 3px rgb(218, 216, 216);
 }
 @mixin carte_menu {
@@ -30,6 +30,7 @@ header{
     justify-content: center;
     align-items: center;
     h1{
+        font-size: 2.7em;
         color: $jaune_principal;
     }
 }
@@ -41,12 +42,22 @@ header{
     &__menu1{
         @include affiche_menu();
     }
+    &__menu2{
+        @include affiche_menu();
+    }
+    &__menu3{
+        @include affiche_menu();
+    }
+    &__menu4{
+        @include affiche_menu();
+    }
 }
 
 .zone_prochainement{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 90px;
     &__bloc{
         display: flex;
         justify-content: center;
@@ -76,6 +87,7 @@ footer{
     position: fixed;
     bottom: 0px;
     p{
-        margin: 10px;
+        margin: 0 10px 0 10px;
     }
 }
+
