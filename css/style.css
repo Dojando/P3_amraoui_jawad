@@ -164,6 +164,55 @@ header h1 {
   display: inline-block;
 }
 
+.carte_contenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carte_contenu h1 {
+  font-size: 1.5em;
+  margin: 30px 0 15px 0;
+}
+
+.carte_menu1 {
+  width: 75%;
+  height: 100%;
+  box-shadow: 0px 0px 3px 3px #dad8d8;
+  margin-bottom: 80px;
+  background-color: #FCDFDB;
+  font-family: "Kalam", sans-serif;
+  padding: 0 15px 0 15px;
+}
+.carte_menu1 img {
+  width: 150px;
+}
+.carte_menu1 header {
+  background-color: #FCDFDB;
+  flex-direction: column;
+  margin-top: 40px;
+  font-size: 1.3em;
+}
+.carte_menu1 article header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.8em;
+  margin: 0px 0px 0px 0px;
+}
+
+.footer_carte {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 50px 0;
+}
+.footer_carte p {
+  margin-top: 8px;
+  font-size: 1.4em;
+}
+.footer_carte i {
+  margin-right: 10px;
+}
+
 footer {
   width: 100%;
   height: 50px;
