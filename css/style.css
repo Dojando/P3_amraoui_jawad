@@ -41,6 +41,7 @@ header h1 {
 .contenu__menu1__detail i {
   font-size: 3em;
   background: linear-gradient(90deg, #f04a5e 0%, #f78f6a 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -74,6 +75,7 @@ header h1 {
   font-size: 1.2em;
   font-weight: 600;
   background: linear-gradient(139deg, #c77412 0%, #9a40ee 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -101,6 +103,7 @@ header h1 {
   font-size: 1.2em;
   font-weight: 600;
   background: linear-gradient(158deg, #081dac 0%, #0887fb 70%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -128,6 +131,7 @@ header h1 {
   font-size: 1.2em;
   font-weight: 600;
   background: linear-gradient(90deg, #64bf42 0%, #a8ff9e 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
