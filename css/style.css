@@ -176,6 +176,10 @@ header h1 {
   background-color: #FFF5FE;
   font-family: "Playfair Display", sans-serif;
 }
+.carte__menu3 {
+  background-color: #EDEFEF;
+  font-family: "Kalam", sans-serif;
+}
 
 .carte_header__menu1 {
   background-color: #FCDFDB;
@@ -185,6 +189,11 @@ header h1 {
 }
 .carte_header__menu2 {
   background-color: #FFF5FE;
+}
+.carte_header__menu3 {
+  background-color: #EDEFEF;
+  margin-top: 30px;
+  font-size: 1.5em;
 }
 
 .orange {
@@ -219,6 +228,18 @@ header h1 {
   width: 150px;
 }
 .article_header__menu2 img:last-child {
+  transform: scaleX(-1);
+}
+.article_header__menu3 {
+  background-color: #EDEFEF;
+}
+.article_header__menu3 h2 {
+  font-weight: normal;
+}
+.article_header__menu3 img {
+  width: 150px;
+}
+.article_header__menu3 img:last-child {
   transform: scaleX(-1);
 }
 

@@ -37,7 +37,7 @@ header{
     }
 }
 
-// Contenu principal des pages
+// Contenu principal
 
 .contenu{
     display: flex;
@@ -182,6 +182,10 @@ header{
         background-color: #FFF5FE;
         font-family: 'Playfair Display', sans-serif;
     }
+    &__menu3{
+        background-color: #EDEFEF;
+        font-family: 'Kalam', sans-serif;
+    }
 }
 
 .carte_header{
@@ -193,6 +197,11 @@ header{
     }
     &__menu2{
         background-color: #FFF5FE;
+    }
+    &__menu3{
+        background-color: #EDEFEF;
+        margin-top: 30px;
+        font-size: 1.5em;
     }
 }
 
@@ -222,6 +231,18 @@ header{
     }
     &__menu2{
         background-color: #FFF5FE;
+        img{
+            width: 150px;
+            &:last-child{
+                transform: scaleX(-1);
+            }
+        }
+    }
+    &__menu3{
+        background-color: #EDEFEF;
+        h2{
+            font-weight: normal;
+        }
         img{
             width: 150px;
             &:last-child{
