@@ -186,6 +186,10 @@ header{
         background-color: #EDEFEF;
         font-family: 'Kalam', sans-serif;
     }
+    &__menu4{
+        background-color: #FDFFFD;
+        font-family: 'Kalam', sans-serif;
+    }
 }
 
 .carte_header{
@@ -200,6 +204,11 @@ header{
     }
     &__menu3{
         background-color: #EDEFEF;
+        margin-top: 30px;
+        font-size: 1.5em;
+    }
+    &__menu4{
+        background-color: #FDFFFD;
         margin-top: 30px;
         font-size: 1.5em;
     }
@@ -250,14 +259,40 @@ header{
             }
         }
     }
+    &__menu4{
+        background-color: #FDFFFD;
+        h2{
+            font-weight: normal;
+        }
+        img{
+            width: 150px;
+            &:last-child{
+                transform: scaleX(-1);
+            }
+        }
+    }
+}
+
+.detail_carte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px 0 50px;
+    &__menu1{
+        margin: 0 0px 0 0px;
+    }
 }
 
 .info_prix{
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    p:last-child{
+        margin-left: 10px;
+    }
     &__menu1{
         p:last-child{
-        font-weight: bold;
+            font-weight: bold;
         }
     }
 }
