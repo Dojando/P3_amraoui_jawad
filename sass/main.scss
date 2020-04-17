@@ -173,10 +173,14 @@ header{
     height: 100%;
     box-shadow: 0px 0px 3px 3px rgb(218, 216, 216);
     margin-bottom: 80px;
-    padding: 0 15px 0 15px;
+    padding: 0 15px 50px 15px;
     &__menu1{
         background-color: #FCDFDB;
         font-family: 'Kalam', sans-serif;
+    }
+    &__menu2{
+        background-color: #FFF5FE;
+        font-family: 'Playfair Display', sans-serif;
     }
 }
 
@@ -187,12 +191,28 @@ header{
         margin-top: 40px;
         font-size: 1.3em;
     }
+    &__menu2{
+        background-color: #FFF5FE;
+    }
+}
+
+.orange{
+    color: #C67412;
+}
+
+.mauve{
+    color: #A56799;
+}
+
+.violet{
+    color: #6E4CCC;
 }
 
 .article_header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    text-align: center;
     font-size: 0.8em;
     &__menu1{
         background-color: #FCDFDB;
@@ -200,10 +220,25 @@ header{
             width: 150px;
         }
     }
+    &__menu2{
+        background-color: #FFF5FE;
+        img{
+            width: 150px;
+            &:last-child{
+                transform: scaleX(-1);
+            }
+        }
+    }
 }
 
 .info_prix{
-
+    display: flex;
+    justify-content: space-between;
+    &__menu1{
+        p:last-child{
+        font-weight: bold;
+        }
+    }
 }
 
 .carte_footer{
