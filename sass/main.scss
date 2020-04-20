@@ -32,7 +32,7 @@ body{
 
 // Titre principal du site : nom de l'entreprise
 
-header{
+.header_site{
     background-color: $vert_principal;
     height: 90px;
     @include flex_center();
@@ -203,27 +203,37 @@ header{
     &__menu1{
         background-color: #FCDFDB;
         flex-direction: column;
+        text-align: center;
         margin: 40px 0 40px 0;
-        font-size: 0.8em;
+        font-size: 1em;
+        i{
+            background: linear-gradient(90deg, rgba(240,74,94,1) 0%, rgba(247,143,106,1) 100%);
+            @include text_gradient;
+            font-size: 3em;
+        }
     }
     &__menu2{
         background-color: #FFF5FE;
         background: linear-gradient(139deg, rgba(199,116,18,1) 0%, rgba(154,64,238,1) 100%);
         @include text_gradient;
+        text-align: center;
+        margin: 40px 0 40px 0;
     }
     &__menu3{
         background-color: #EDEFEF;
         background: linear-gradient(158deg, rgba(8,29,172,1) 0%, rgba(8,135,251,1) 70%);
         @include text_gradient;
-        margin-top: 30px;
-        font-size: 1.5em;
+        text-align: center;
+        margin: 40px 0 40px 0;
+        font-size: 1.3em;
     }
     &__menu4{
         background-color: #FDFFFD;
         background: linear-gradient(90deg, rgba(100,191,66,1) 0%, rgba(168,255,158,1) 100%);
         @include text_gradient;
-        margin-top: 30px;
-        font-size: 1.5em;
+        text-align: center;
+        margin: 40px 0 40px 0;
+        font-size: 1.3em;
     }
 }
 
@@ -250,13 +260,13 @@ header{
     &__menu1{
         background-color: #FCDFDB;
         img{
-            height: 6px;
+            height: 5.5px;
         }
     }
     &__menu2{
         background-color: #FFF5FE;
         img{
-            height: 15px;
+            height: 2px;
             &:last-child{
                 transform: scaleX(-1);
             }
@@ -264,11 +274,11 @@ header{
     }
     &__menu3{
         background-color: #EDEFEF;
-        h2{
+        h3{
             font-weight: normal;
         }
         img{
-            height: 15px;
+            height: 3px;
             &:last-child{
                 transform: scaleX(-1);
             }
@@ -280,7 +290,7 @@ header{
             font-weight: normal;
         }
         img{
-            height: 15px;
+            height: 3px;
             &:last-child{
                 transform: scaleX(-1);
             }
@@ -292,10 +302,6 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 50px 0 50px;
-    &__menu1{
-        margin: 0 0px 0 0px;
-    }
 }
 
 .info_prix{
@@ -316,14 +322,10 @@ header{
 
 .carte_footer{
     display: flex;
-    justify-content: center;
+    align-items: center;
     margin: 50px 0 50px 0;
     p{
-        margin-top: 8px;
         font-size: 1.4em;
-    }
-    i{
-        margin-right: 10px;
     }
 }
 
