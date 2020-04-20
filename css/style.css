@@ -10,6 +10,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  min-width: 320px;
 }
 
 header {
@@ -167,10 +168,11 @@ header h1 {
 
 .carte {
   width: 75%;
+  max-width: 1200px;
   height: 100%;
   box-shadow: 0px 0px 3px 3px #dad8d8;
   margin-bottom: 80px;
-  padding: 0 15px 50px 15px;
+  padding: 0 15px 30px 15px;
 }
 .carte__menu1 {
   background-color: #FCDFDB;
@@ -192,19 +194,31 @@ header h1 {
 .carte_header__menu1 {
   background-color: #FCDFDB;
   flex-direction: column;
-  margin-top: 40px;
-  font-size: 1.3em;
+  margin: 40px 0 40px 0;
+  font-size: 0.8em;
 }
 .carte_header__menu2 {
   background-color: #FFF5FE;
+  background: linear-gradient(139deg, #c77412 0%, #9a40ee 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .carte_header__menu3 {
   background-color: #EDEFEF;
+  background: linear-gradient(158deg, #081dac 0%, #0887fb 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-top: 30px;
   font-size: 1.5em;
 }
 .carte_header__menu4 {
   background-color: #FDFFFD;
+  background: linear-gradient(90deg, #64bf42 0%, #a8ff9e 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-top: 30px;
   font-size: 1.5em;
 }
@@ -225,20 +239,22 @@ header h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 1em;
+  margin: 20px 0 20px 0;
 }
 .article_header__menu1 {
   background-color: #FCDFDB;
 }
 .article_header__menu1 img {
-  width: 150px;
+  height: 6px;
 }
 .article_header__menu2 {
   background-color: #FFF5FE;
 }
 .article_header__menu2 img {
-  width: 150px;
+  height: 15px;
 }
 .article_header__menu2 img:last-child {
   transform: scaleX(-1);
@@ -250,7 +266,7 @@ header h1 {
   font-weight: normal;
 }
 .article_header__menu3 img {
-  width: 150px;
+  height: 15px;
 }
 .article_header__menu3 img:last-child {
   transform: scaleX(-1);
@@ -258,11 +274,11 @@ header h1 {
 .article_header__menu4 {
   background-color: #FDFFFD;
 }
-.article_header__menu4 h2 {
+.article_header__menu4 h3 {
   font-weight: normal;
 }
 .article_header__menu4 img {
-  width: 150px;
+  height: 15px;
 }
 .article_header__menu4 img:last-child {
   transform: scaleX(-1);
@@ -280,8 +296,10 @@ header h1 {
 
 .info_prix {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .info_prix p:last-child {
   margin-left: 10px;
