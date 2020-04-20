@@ -1,17 +1,17 @@
 // générale
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
 $vert_principal: #569C87;
 $jaune_principal: #FCCA46;
-
-@mixin affiche_menu {
-    width: 250px;
-    height: 360px;
-    margin: 30px 0 30px 0;
-    box-shadow: 0px 0px 3px 3px rgb(218, 216, 216);
-}
-@mixin carte_menu {
-    
-}
 
 @mixin flex_center {
     display: flex;
@@ -19,15 +19,18 @@ $jaune_principal: #FCCA46;
     align-items: center;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@mixin text_gradient{
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
+    min-width: 320px;
 }
+
+// Titre principal du site : nom de l'entreprise
 
 header{
     background-color: $vert_principal;
@@ -36,107 +39,113 @@ header{
     h1{
         font-size: 2.7em;
         color: $jaune_principal;
+
     }
 }
+
+// Contenu principal
 
 .contenu{
     display: flex;
     flex-direction: column;
     align-items: center;
-    &__menu1{
-        @include affiche_menu();
+}
+
+.menu{
+    width: 250px;
+    height: 360px;
+    margin: 30px 0 30px 0;
+    box-shadow: 0px 0px 3px 3px rgb(218, 216, 216);
+    &__1{
         background-color: #FCDFDB;
         @include flex_center();
-        &__detail{
-            text-align: center;
-            i{
-                font-size: 3em;
-                background: linear-gradient(90deg, rgba(240,74,94,1) 0%, rgba(247,143,106,1) 100%);
-                -webkit-background-clip: text;
-	            -webkit-text-fill-color: transparent;
-            }
-            p{
-                font-family: 'Kalam', sans-serif;
-                font-size: 1.1em;
-                font-weight: 600;
-                color: #3C1218;
-            }
-            h2{
-                font-family: 'Kalam', sans-serif;
-                font-weight: 600;
-                font-size: 1.8em;
-                color: #3C1218;
-            }
+    }
+    &__2{
+        background-color: #FFF5FE;
+        @include flex_center();
+    }
+    &__3{
+        background-color: #F9F9F9;
+        @include flex_center();
+    }
+    &__4{
+        background-color: #FDFFFD;
+        @include flex_center();
+    }
+}
+
+.style{
+    &__menu1{
+        text-align: center;
+        i{
+            font-size: 3em;
+            background: linear-gradient(90deg, rgba(240,74,94,1) 0%, rgba(247,143,106,1) 100%);
+            @include text_gradient;
+        }
+        p{
+            font-family: 'Kalam', sans-serif;
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #3C1218;
+        }
+        h2{
+            font-family: 'Kalam', sans-serif;
+            font-weight: 600;
+            font-size: 1.8em;
+            color: #3C1218;
         }
     }
     &__menu2{
-        @include affiche_menu();
-        background-color: #FFF5FE;
-        @include flex_center();
-        &__detail{
-            text-align: center;
-            p{
-                font-family: 'Playfair Display', sans-serif;
-                font-size: 1.2em;
-                font-weight: 600;
-                background: linear-gradient(139deg, rgba(199,116,18,1) 0%, rgba(154,64,238,1) 100%);
-                -webkit-background-clip: text;
-	            -webkit-text-fill-color: transparent;
-
-            }
-            h2{
-                font-family: 'Playfair Display', sans-serif;
-                font-size: 1.8em;
-                font-weight: 600;
-                color: #C77412;
-            }
+        text-align: center;
+        p{
+            font-family: 'Playfair Display', sans-serif;
+            font-size: 1.2em;
+            font-weight: 600;
+            background: linear-gradient(139deg, rgba(199,116,18,1) 0%, rgba(154,64,238,1) 100%);
+            @include text_gradient;
+        }
+        h2{
+            font-family: 'Playfair Display', sans-serif;
+            font-size: 1.8em;
+            font-weight: 600;
+            color: #C77412;
         }
     }
     &__menu3{
-        @include affiche_menu();
-        background-color: #F9F9F9;
-        @include flex_center();
-        &__detail{
-            text-align: center;
-            p{
-                font-family: 'Kalam', sans-serif;
-                font-size: 1.2em;
-                font-weight: 600;
-                background: linear-gradient(158deg, rgba(8,29,172,1) 0%, rgba(8,135,251,1) 70%);
-                -webkit-background-clip: text;
-	            -webkit-text-fill-color: transparent;
-            }
-            h2{
-                font-family: 'Kalam', sans-serif;
-                font-size: 1.8em;
-                font-weight: 500;
-                color: #0887FB;
-            }
+        text-align: center;
+        p{
+            font-family: 'Kalam', sans-serif;
+            font-size: 1.2em;
+            font-weight: 600;
+            background: linear-gradient(158deg, rgba(8,29,172,1) 0%, rgba(8,135,251,1) 70%);
+            @include text_gradient;
+        }
+        h2{
+            font-family: 'Kalam', sans-serif;
+            font-size: 1.8em;
+            font-weight: 500;
+            color: #0887FB;
         }
     }
     &__menu4{
-        @include affiche_menu();
-        background-color: #FDFFFD;
-        @include flex_center();
-        &__detail{
-            text-align: center;
-            p{
-                font-family: 'Kalam', sans-serif;
-                font-size: 1.2em;
-                font-weight: 600;
-                background: linear-gradient(90deg, rgba(100,191,66,1) 0%, rgba(168,255,158,1) 100%);
-                -webkit-background-clip: text;
-	            -webkit-text-fill-color: transparent;
-            }
-            h2{
-                font-family: 'Kalam', sans-serif;
-                font-size: 1.8em;
-                font-weight: 500;
-                color: #72BF56;
-            }
+        text-align: center;
+        p{
+            font-family: 'Kalam', sans-serif;
+            font-size: 1.2em;
+            font-weight: 600;
+            background: linear-gradient(90deg, rgba(100,191,66,1) 0%, rgba(168,255,158,1) 100%);
+            @include text_gradient;
+        }
+        h2{
+            font-family: 'Kalam', sans-serif;
+            font-size: 1.8em;
+            font-weight: 500;
+            color: #72BF56;
         }
     }
 }
+
+// zone prochainement de la page principale
 
 .zone_prochainement{
     width: 100%;
@@ -157,6 +166,168 @@ header{
         }
     }
 }
+
+//  carte des menus
+
+.h1_carte{
+    font-size: 1.5em;
+    margin: 30px 0 15px 0;
+}
+
+.carte{
+    width: 75%;
+    max-width: 1200px;
+    height: 100%;
+    box-shadow: 0px 0px 3px 3px rgb(218, 216, 216);
+    margin-bottom: 80px;
+    padding: 0 15px 30px 15px;
+    &__menu1{
+        background-color: #FCDFDB;
+        font-family: 'Kalam', sans-serif;
+    }
+    &__menu2{
+        background-color: #FFF5FE;
+        font-family: 'Playfair Display', sans-serif;
+    }
+    &__menu3{
+        background-color: #EDEFEF;
+        font-family: 'Kalam', sans-serif;
+    }
+    &__menu4{
+        background-color: #FDFFFD;
+        font-family: 'Kalam', sans-serif;
+    }
+}
+
+.carte_header{
+    &__menu1{
+        background-color: #FCDFDB;
+        flex-direction: column;
+        margin: 40px 0 40px 0;
+        font-size: 0.8em;
+    }
+    &__menu2{
+        background-color: #FFF5FE;
+        background: linear-gradient(139deg, rgba(199,116,18,1) 0%, rgba(154,64,238,1) 100%);
+        @include text_gradient;
+    }
+    &__menu3{
+        background-color: #EDEFEF;
+        background: linear-gradient(158deg, rgba(8,29,172,1) 0%, rgba(8,135,251,1) 70%);
+        @include text_gradient;
+        margin-top: 30px;
+        font-size: 1.5em;
+    }
+    &__menu4{
+        background-color: #FDFFFD;
+        background: linear-gradient(90deg, rgba(100,191,66,1) 0%, rgba(168,255,158,1) 100%);
+        @include text_gradient;
+        margin-top: 30px;
+        font-size: 1.5em;
+    }
+}
+
+.orange{
+    color: #C67412;
+}
+
+.mauve{
+    color: #A56799;
+}
+
+.violet{
+    color: #6E4CCC;
+}
+
+.article_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    margin: 20px 0 20px 0;
+    &__menu1{
+        background-color: #FCDFDB;
+        img{
+            height: 6px;
+        }
+    }
+    &__menu2{
+        background-color: #FFF5FE;
+        img{
+            height: 15px;
+            &:last-child{
+                transform: scaleX(-1);
+            }
+        }
+    }
+    &__menu3{
+        background-color: #EDEFEF;
+        h2{
+            font-weight: normal;
+        }
+        img{
+            height: 15px;
+            &:last-child{
+                transform: scaleX(-1);
+            }
+        }
+    }
+    &__menu4{
+        background-color: #FDFFFD;
+        h3{
+            font-weight: normal;
+        }
+        img{
+            height: 15px;
+            &:last-child{
+                transform: scaleX(-1);
+            }
+        }
+    }
+}
+
+.detail_carte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px 0 50px;
+    &__menu1{
+        margin: 0 0px 0 0px;
+    }
+}
+
+.info_prix{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    p:last-child{
+        margin-left: 10px;
+    }
+    &__menu1{
+        p:last-child{
+            font-weight: bold;
+        }
+    }
+}
+
+.carte_footer{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 50px 0;
+    p{
+        margin-top: 8px;
+        font-size: 1.4em;
+    }
+    i{
+        margin-right: 10px;
+    }
+}
+
+// bas de page
 
 footer{
     width: 100%;
