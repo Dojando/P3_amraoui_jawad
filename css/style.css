@@ -34,7 +34,7 @@ body {
 .menu {
   width: 250px;
   height: 360px;
-  margin: 30px 0 30px 0;
+  margin: 30px 30px 30px 30px;
   box-shadow: 0px 0px 3px 3px #dad8d8;
 }
 .menu__1 {
@@ -173,6 +173,8 @@ body {
   box-shadow: 0px 0px 3px 3px #dad8d8;
   margin-bottom: 80px;
   padding: 0 15px 30px 15px;
+  display: flex;
+  justify-content: center;
 }
 .carte__menu1 {
   background-color: #FCDFDB;
@@ -182,6 +184,9 @@ body {
   background-color: #FFF5FE;
   font-family: "Playfair Display", sans-serif;
 }
+.carte__menu2 p {
+  font-size: 0.9em;
+}
 .carte__menu3 {
   background-color: #EDEFEF;
   font-family: "Kalam", sans-serif;
@@ -189,6 +194,11 @@ body {
 .carte__menu4 {
   background-color: #FDFFFD;
   font-family: "Kalam", sans-serif;
+}
+
+.contenu_carte {
+  width: 100%;
+  max-width: 490px;
 }
 
 .carte_header__menu1 {
@@ -265,8 +275,11 @@ body {
 .article_header__menu2 {
   background-color: #FFF5FE;
 }
+.article_header__menu2 h3 {
+  font-size: 1em;
+}
 .article_header__menu2 img {
-  height: 2px;
+  height: 3px;
 }
 .article_header__menu2 img:last-child {
   transform: scaleX(-1);
@@ -308,21 +321,25 @@ body {
   align-items: center;
   text-align: center;
   margin-bottom: 20px;
+  width: 100%;
 }
-.info_prix p:last-child {
+
+.prix {
   margin-left: 10px;
 }
-.info_prix__menu1 p:last-child {
+.prix--gras {
   font-weight: bold;
 }
 
 .carte_footer {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin: 50px 0 50px 0;
 }
 .carte_footer p {
   font-size: 1.4em;
+  margin-left: 5px;
 }
 
 footer {
@@ -339,6 +356,38 @@ footer {
 }
 footer p {
   margin: 0 10px 0 10px;
+}
+
+@media screen and (min-width: 641px) {
+  .organisation_menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 620px;
+  }
+
+  .article_header__menu1 img {
+    height: 14px;
+  }
+  .article_header__menu2 img {
+    height: 8px;
+  }
+  .article_header__menu3 img {
+    height: 8px;
+  }
+  .article_header__menu4 img {
+    height: 8px;
+  }
+
+  .info_prix {
+    flex-direction: row;
+    text-align: left;
+    width: 85%;
+    justify-content: space-between;
+  }
+  .info_prix__menu1 {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

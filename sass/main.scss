@@ -54,7 +54,7 @@ body{
 .menu{
     width: 250px;
     height: 360px;
-    margin: 30px 0 30px 0;
+    margin: 30px 30px 30px 30px;
     box-shadow: 0px 0px 3px 3px rgb(218, 216, 216);
     &__1{
         background-color: #FCDFDB;
@@ -181,6 +181,8 @@ body{
     box-shadow: 0px 0px 3px 3px rgb(218, 216, 216);
     margin-bottom: 80px;
     padding: 0 15px 30px 15px;
+    display: flex;
+    justify-content: center;
     &__menu1{
         background-color: #FCDFDB;
         font-family: 'Kalam', sans-serif;
@@ -188,6 +190,9 @@ body{
     &__menu2{
         background-color: #FFF5FE;
         font-family: 'Playfair Display', sans-serif;
+        p{
+            font-size: 0.9em;
+        }
     }
     &__menu3{
         background-color: #EDEFEF;
@@ -197,6 +202,11 @@ body{
         background-color: #FDFFFD;
         font-family: 'Kalam', sans-serif;
     }
+}
+
+.contenu_carte{
+    width: 100%;
+    max-width: 490px;
 }
 
 .carte_header{
@@ -265,8 +275,11 @@ body{
     }
     &__menu2{
         background-color: #FFF5FE;
+        h3{
+            font-size: 1em;
+        }
         img{
-            height: 2px;
+            height: 3px;
             &:last-child{
                 transform: scaleX(-1);
             }
@@ -310,22 +323,24 @@ body{
     align-items: center;
     text-align: center;
     margin-bottom: 20px;
-    p:last-child{
-        margin-left: 10px;
-    }
-    &__menu1{
-        p:last-child{
-            font-weight: bold;
-        }
+    width: 100%;
+}
+
+.prix{
+    margin-left: 10px;
+    &--gras{
+        font-weight: bold;
     }
 }
 
 .carte_footer{
     display: flex;
+    justify-content: center;
     align-items: center;
     margin: 50px 0 50px 0;
     p{
         font-size: 1.4em;
+        margin-left: 5px;
     }
 }
 
@@ -347,3 +362,44 @@ footer{
     }
 }
 
+// Medias queries
+
+@media screen and (min-width: 641px){
+    .organisation_menu{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 620px;
+    }
+    .article_header{
+        &__menu1{
+            img{
+                height: 14px;
+            }
+        }
+        &__menu2{
+            img{
+                height: 8px;
+            }
+        }
+        &__menu3{
+            img{
+                height: 8px;
+            }
+        }
+        &__menu4{
+            img{
+                height: 8px;
+            }
+        }
+    }
+    .info_prix{
+        flex-direction: row;
+        text-align: left;
+        width: 85%;
+        justify-content: space-between;
+        &__menu1{
+            width: 100%;
+        }
+    }
+}
