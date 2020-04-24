@@ -169,7 +169,7 @@ body {
 
 .carte {
   width: 75%;
-  max-width: 1200px;
+  max-width: 600px;
   height: 100%;
   box-shadow: 0px 0px 3px 3px #dad8d8;
   margin-bottom: 80px;
@@ -451,14 +451,14 @@ footer p {
 
 @media screen and (min-width: 641px) {
   .menu {
-    margin: 30px 30px 30px 30px;
+    margin: 60px 30px 50px 30px;
   }
 
   .organisation_menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    width: 620px;
+    max-width: 850px;
   }
 
   .article_header__menu1 img {
