@@ -73,8 +73,8 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .style__menu1 p {
-  font-family: "Kalam", sans-serif;
-  font-size: 1.1em;
+  font-family: "Kaushan Script", sans-serif;
+  font-size: 1.2em;
   font-weight: 600;
   color: #3C1218;
 }
@@ -106,8 +106,8 @@ body {
   text-align: center;
 }
 .style__menu3 p {
-  font-family: "Kalam", sans-serif;
-  font-size: 1.2em;
+  font-family: "Dancing Script", sans-serif;
+  font-size: 1.4em;
   font-weight: 600;
   background: linear-gradient(158deg, #081dac 0%, #0887fb 70%);
   background-clip: text;
